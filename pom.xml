@@ -9,16 +9,16 @@
         <version>3.5.3</version>
         <relativePath/> <!-- Lookup parent from repository -->
     </parent>
-    <groupId>com.embabel.template</groupId>
-    <artifactId>ProjectName</artifactId>
+    <groupId>aldrinm</groupId>
+    <artifactId>CypherFeedbackCorrection</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>My first agent</name>
-    <description>Generated agent project</description>
+    <name>Cypher feedback correction agent</name>
+    <description>Generates cypher, then validates and corrects it</description>
 
     <properties>
         <java.version>21</java.version>
-        <embabel-agent.version>0.1.0</embabel-agent.version>
+        <embabel-agent.version>0.1.1-SNAPSHOT</embabel-agent.version>
     </properties>
 
     <dependencies>
@@ -37,6 +37,10 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-neo4j</artifactId>
+        </dependency>
 
         <!-- Unit and Integration Testing -->
         <dependency>
